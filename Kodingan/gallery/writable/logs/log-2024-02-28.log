@@ -1,0 +1,31 @@
+ERROR - 2024-02-28 18:53:06 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2024-02-28 18:53:06 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\galeri\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\galeri\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\galeri\app\Models\M_login.php(18): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\galeri\app\Controllers\Home.php(51): App\Models\M_login->getLoginWithPassword('user', 'admin', 'admin')
+#4 C:\xampp\htdocs\galeri\system\CodeIgniter.php(832): App\Controllers\Home->aksi_login()
+#5 C:\xampp\htdocs\galeri\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\galeri\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\galeri\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\galeri\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2024-02-28 18:53:26 --> Error connecting to the database: Unknown database 'gallery'
+CRITICAL - 2024-02-28 18:53:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'gallery'
+#0 C:\xampp\htdocs\galeri\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\galeri\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\galeri\app\Models\M_login.php(18): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\galeri\app\Controllers\Home.php(51): App\Models\M_login->getLoginWithPassword('user', 'admin', 'admin')
+#4 C:\xampp\htdocs\galeri\system\CodeIgniter.php(832): App\Controllers\Home->aksi_login()
+#5 C:\xampp\htdocs\galeri\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\galeri\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\galeri\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\galeri\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2024-02-28 19:23:52 --> Column 'user_id' cannot be null
+ERROR - 2024-02-28 19:24:27 --> Column 'user_id' cannot be null
+ERROR - 2024-02-28 19:29:40 --> Column 'user_id' cannot be null
